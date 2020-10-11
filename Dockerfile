@@ -5,3 +5,5 @@ COPY package*.json ./
 ENV PORT 5000
 
 RUN npm cache clear --force && npm install
+
+ENTRYPOINT ["npm", "start"]
